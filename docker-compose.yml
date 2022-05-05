@@ -2,20 +2,20 @@ version: "3.7"
 
 services:
   api:
-    container_name: python-todos-api
+    container_name: busquedas-python
     image: python
     environment:
-      - MONGO_URI=mongodb://mongo:27017/todos
-      - APP_PORT=5000
+      - MONGO_URI=mongodb://mongo:27017/busquedas
+      - APP_PORT=5001
     depends_on:
       - mongo
     volumes:
       - .:/api
-    ports: ["5000:5000"]
+    ports: ["5001:5001"]
     tty: true
 
   mongo:
-    container_name: mongo-db
+    container_name: mongo-db-busquedas
     image: mongo
     volumes:
       - "./db:/data/db"

@@ -1,5 +1,5 @@
 {
-  "name": "Python API",
+  "name": "Python API Busquedas",
   "dockerComposeFile": "../docker-compose.yml",
   "service": "api",
   "workspaceFolder": "/api",
